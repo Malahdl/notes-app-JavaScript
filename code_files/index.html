@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/c6fd6a64e0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="search-container">
+            <input type="text" name="search" id="search-text" placeholder="Enter a note title">
+            <div class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="new-note-btn"><i class="fa-solid fa-plus"></i> New Note</div>
+    </div>
+    <div class="main-body"></div>
+    <div class="note-page hidden">
+        <div class="upper-container">
+            <div class="note-page-header">
+                <div class="back-btn">Back <i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+            <input type="text" name="title" id="title" placeholder="Note Title"> 
+            <textarea name="note-body" id="note-body" cols="30" rows="10" placeholder="Note Body"></textarea>
+        </div>
+        <h2 class="error"></h2>
+        <div class="add-btn">Add Note</div>
+    </div>
+    <div class="info-page hidden">
+        <div class="close-btn">
+            <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+        </div>
+        <h1 class="info-title"></h1>
+        <hr>
+        <p class="info-body"></p>
+    </div>
+</body>
+
+</html>

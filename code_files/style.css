@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background-color: rgb(170, 43, 170);
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 100%;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+}
+
+#search-text {
+    width: 70%;
+    margin: 10px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding-left: 5px;
+    font-family: cursive;
+}
+
+.search-btn {
+    background-color: white;
+    color: rgb(170, 43, 170);
+    margin: 10px;
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.search-btn:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.new-note-btn {
+    background-color: aliceblue;
+    color: rgb(170, 43, 170);
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: cursive;
+}
+
+.new-note-btn:hover {
+    cursor: pointer;
+    background-color: black;
+    color: aliceblue;
+}
+
+.note-page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.note-page .upper-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.note-page-header {
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.back-btn {
+    color: rgb(170, 43, 170);
+    background-color: transparent;
+    width: 120px;
+    height: 60px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: cursive;
+}
+
+.back-btn:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.upper-container #title, .upper-container #note-body {
+    margin: 10px;
+    border-color: rgb(170, 43, 170);
+    border-width: 2px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 20px;
+    font-family: cursive;
+    padding-left: 10px;
+    letter-spacing: 1.3px;
+}
+
+.upper-container #title {
+    height: 50px;
+}
+.upper-container #note-body {
+    height: 300px;
+}
+
+.error {
+    text-align: center;
+    color: red;
+}
+
+.add-btn {
+    margin: 10px;
+    height: 50px;
+    background-color: rgb(170, 43, 170);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}
+
+.add-btn:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+.main-body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.no-notes-body {
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-body h1 {
+    color: white;
+    font-family: cursive;
+}
+
+.note-item {
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 0px 5px rgba(255, 255, 255); /* Offset, Blur, Spread, Color */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+
+.tools-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.tools-div i {
+    font-size: 20px;
+    color: rgb(170, 43, 170);
+}
+
+.tools-div i:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.tools-div .first-half i {
+    margin-right: 10px;
+}
+
+
+.note-item h2 {
+    margin: 5px 10px;
+    font-family: cursive;
+}
+
+.note-item p {
+    margin: 3px 10px;
+    font-family: cursive;
+}
+
+.note-item hr {
+    width: 95%;
+    border-width: 1px;
+    border-color: black;
+    text-align: center;
+}
+
+.info-page {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.close-btn {
+    width: 100%;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-right: 20px;
+    color: rgb(170, 43, 170);
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.close-btn:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.info-title {
+    text-align: center;
+    font-family: cursive;
+}
+
+.info-page hr {
+    width: 95%;
+    border-width: 3px;
+    border-color: black;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.info-body {
+    font-size: 20px;
+    font-family: cursive;
+    margin: 10px 15px;
+}
+
+.colored {
+    background-color: yellow;
+}
