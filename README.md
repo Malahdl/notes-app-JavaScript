@@ -1,4 +1,4 @@
-Welcome to the Notes app!.
+Welcome to the Notes app!
 
 DESCRIPTION:
 This is a simple JavaScript app where you can create notes and display them as note cards in your page.
